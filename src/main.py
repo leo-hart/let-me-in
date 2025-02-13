@@ -16,17 +16,17 @@ def button_click():
     window.clipboard_clear()
     window.clipboard_append(password)
 
-background_color = "#BDCAF2"
+background_color = "white"
 window = tk.Tk()
-window.title("Let Me In!")
+window.title("Secure Password Generator")
 window.geometry("500x450")
 window.resizable(False, False)
 window.configure(bg=background_color)
 frame = tk.Frame(window)
 
 #Fonts
-font1 = ("Verdana", 16  )
-font2 = ("Arial", 12, 'bold')
+font1 = ("Verdana", 24  )
+font2 = ("Arial", 16, 'bold')
 
 #Content
 label1 = tk.Label(window, text="Click to generate a strong password.", bg=background_color, pady=50, font=font2)
